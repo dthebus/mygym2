@@ -4,14 +4,14 @@
  * and open the template in the editor.
  */
 
-package com.dthebus.mygym2.model.staff;
+package com.dthebus.mygym2.model.Products;
 
 /**
  *
  * @author student
  */
-public final class ClassInstructors implements Employees{
-     private int id;
+public final class HotBeverages implements Refreshment{
+    private int id;
     private String name;
     
     public int getID() {
@@ -23,7 +23,7 @@ public final class ClassInstructors implements Employees{
 
    
    
-    private ClassInstructors(Builder builder) {
+    private HotBeverages(Builder builder) {
        id=builder.id;
         name= builder.name;
       }
@@ -41,14 +41,14 @@ public final class ClassInstructors implements Employees{
              return this;
             
         }
-         public ClassInstructors build(){
-            return new ClassInstructors(this);
+         public HotBeverages build(){
+            return new HotBeverages(this);
         }
     }
 
     @Override
     public int hashCode() {
-        int hash = 3;
+        int hash = 7;
         hash = 23 * hash + this.id;
         return hash;
     }
@@ -61,7 +61,7 @@ public final class ClassInstructors implements Employees{
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final ClassInstructors other = (ClassInstructors) obj;
+        final HotBeverages other = (HotBeverages) obj;
         if (this.id != other.id) {
             return false;
         }

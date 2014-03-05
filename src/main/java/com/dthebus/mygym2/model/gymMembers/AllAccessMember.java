@@ -4,26 +4,23 @@
  * and open the template in the editor.
  */
 
-package com.dthebus.mygym2.model.staff;
+package com.dthebus.mygym2.model.gymMembers;
 
 /**
  *
  * @author student
  */
-public final class ClassInstructors implements Employees{
+public class AllAccessMember implements Members {
      private int id;
     private String name;
     
     public int getID() {
     return id;    
     }
-    public String getName() {
-        return name;
-    }
-
-   
-   
-    private ClassInstructors(Builder builder) {
+    public String getName(){
+    return name;
+            }
+    private AllAccessMember(Builder builder) {
        id=builder.id;
         name= builder.name;
       }
@@ -41,15 +38,15 @@ public final class ClassInstructors implements Employees{
              return this;
             
         }
-         public ClassInstructors build(){
-            return new ClassInstructors(this);
+         public AllAccessMember build(){
+            return new AllAccessMember(this);
         }
     }
 
     @Override
     public int hashCode() {
         int hash = 3;
-        hash = 23 * hash + this.id;
+        hash = 43 * hash + this.id;
         return hash;
     }
 
@@ -61,7 +58,7 @@ public final class ClassInstructors implements Employees{
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final ClassInstructors other = (ClassInstructors) obj;
+        final AllAccessMember other = (AllAccessMember) obj;
         if (this.id != other.id) {
             return false;
         }
