@@ -6,7 +6,10 @@
 
 package com.dthebus.mygym2;
 
+import com.dthebus.mygym2.model.Products.Wraps;
+import org.testng.Assert;
 import static org.testng.Assert.*;
+import org.testng.annotations.Test;
 
 /**
  *

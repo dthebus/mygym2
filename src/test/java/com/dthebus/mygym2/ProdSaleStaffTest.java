@@ -7,7 +7,9 @@
 package com.dthebus.mygym2;
 
 import com.dthebus.mygym2.model.staff.ProductSalesStaff;
+import org.testng.Assert;
 import static org.testng.Assert.*;
+import org.testng.annotations.Test;
 
 /**
  *

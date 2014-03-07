@@ -7,7 +7,9 @@
 package com.dthebus.mygym2;
 
 import com.dthebus.mygym2.model.staff.AccessController;
+import org.testng.Assert;
 import static org.testng.Assert.*;
+import org.testng.annotations.Test;
 
 /**
  *
@@ -27,7 +29,7 @@ public class AccessControllerTest {
 @Test
     public void testCreation() throws Exception {
        sample = new AccessController.Builder(1005).name("Tim").build();
-        Assert.assertEquals(sample.getID(),1003);
+        Assert.assertEquals(sample.getID(),1005);
       
     }
     @Test

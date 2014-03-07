@@ -7,7 +7,9 @@
 package com.dthebus.mygym2;
 
 import com.dthebus.mygym2.model.Products.WeightLossProduct;
+import org.testng.Assert;
 import static org.testng.Assert.*;
+import org.testng.annotations.Test;
 
 /**
  *
@@ -29,7 +31,7 @@ public class WeightLossProductTest {
     }
     @Test
      public void testUpdate() throws Exception {
-       sample2 = new WeightLossProduct.Builder(30026.name("phedracut").build();
+       sample2 = new WeightLossProduct.Builder(30026).name("phedracut").build();
         Assert.assertEquals(sample2.getName(),"phedracut");
       
     }

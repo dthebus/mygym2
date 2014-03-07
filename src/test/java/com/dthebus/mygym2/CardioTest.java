@@ -7,7 +7,9 @@
 package com.dthebus.mygym2;
 
 import com.dthebus.mygym2.model.ExerciseClasses.Cardio;
+import org.testng.Assert;
 import static org.testng.Assert.*;
+import org.testng.annotations.Test;
 
 /**
  *

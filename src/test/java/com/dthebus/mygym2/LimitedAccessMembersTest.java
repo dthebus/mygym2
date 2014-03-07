@@ -7,7 +7,9 @@
 package com.dthebus.mygym2;
 
 import com.dthebus.mygym2.model.gymMembers.LimitedAccessMember;
+import org.testng.Assert;
 import static org.testng.Assert.*;
+import org.testng.annotations.Test;
 
 /**
  *
@@ -27,7 +29,7 @@ public class LimitedAccessMembersTest {
 @Test
     public void testCreation() throws Exception {
        sample = new LimitedAccessMember.Builder(1010).name("Tim").build();
-        Assert.assertEquals(sample.getID(),1009);
+        Assert.assertEquals(sample.getID(),1010);
       
     }
     @Test
